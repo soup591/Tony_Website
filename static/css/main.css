@@ -1,8 +1,10 @@
 /* Style the header with a grey background and some padding */
 .header {
   overflow: hidden;
+  border-radius: 20px;
   background-color: #2E174E;
   padding: 20px 10px;
+  box-shadow: 5px 7px rgb(170, 170, 170);
 }
 
 /* Style the header links */
@@ -13,14 +15,16 @@
   padding: 12px;
   text-decoration: none;
   font-size: 18px;
+  font-family: 'Roboto Condensed', sans-serif;
   line-height: 25px;
   border-radius: 4px;
 }
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
 .header a.logo {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 /* Change the background color on mouse-over */

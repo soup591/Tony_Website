@@ -3,23 +3,31 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Gravitas Tattoo</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href="{{ url_for('static', filename='css/main.css') }}">
-    <script src='main.js'></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <style>
+      #grad1 {
+        background-color: rgb(61, 48, 87); /* For browsers that do not support gradients */
+        background-image: linear-gradient(to right, rgb(63, 46, 94), black);
+      }
+    </style>
+    
 </head>
 <body>
-    <div class="header">
-        <a href="#default" class="logo">Gravitas Tattoo</a>
+    <div class="header" id="grad1">
+        <a href="/home" class="logo">Gravitas Tattoo</a>
         <div class="header-right">
-          <a class="active" href="#home">Home</a>
+          <a href="/home">Home</a>
           <a href="/about">About</a>
           <a href="/inquire">Inquire</a>
           <a href="/deposit">Deposit</a>
           <a href="/gallery">Gallery</a>
         </div>
       </div>
-      {% block content %}{% endblock %}
-    
+     {% block content %}{% endblock %}
 </body>
 </html>

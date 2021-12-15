@@ -13,23 +13,23 @@ app = Flask(__name__)
 @app.route("/")
 @app.route("/home/")
 def home():
-    return render_template("home.html")
+    return render_template("home.html", page="home")
 
 @app.route("/about")
 def about():
-    return "This will be where Tony's 'about' info will go."
+    return render_template("about.html", page="about")
 
 @app.route("/inquire/")
 def inquire():
-    return "This will be where an email / contact form is."
+    return render_template("inquire.html", page="inquire")
 
 @app.route("/deposit/")
 def deposit():
-    return "This will be where Tony can link his Venmo to take deposits."
+    return render_template("deposit.html", page="deposit")
 
 @app.route("/gallery/")
 def gallery():
-    return "This will host all of Tony's works in a visually appealing manner."
+    return render_template("gallery.html", page="gallery")
 
 
 """
